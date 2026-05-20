@@ -1,0 +1,354 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Iris — Adopt a Curriculum Assistant"
+  description="Iris is a curriculum assistant at Silicon Children University. Talk with her, and she helps you build a course — syllabus, week-by-week plans, reading lists — cumulatively, conversation by conversation."
+>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Iris builds your curriculum with you, one conversation at a time.</h1>
+    <p class="lede">
+      She is a curriculum assistant at Silicon Children University.
+      You talk; she listens, remembers, and builds.
+    </p>
+    <a href="https://iris-talk.netlify.app" class="cta" target="_blank" rel="noopener">
+      Talk with Iris &rarr;
+    </a>
+    <p class="cta-note">Live demo &mdash; no account needed. Voice, real-time.</p>
+  </div>
+
+  <hr />
+
+  <!-- WHAT IRIS DOES -->
+  <section>
+    <h2>What Iris does</h2>
+    <p>
+      Most curriculum tools want you to fill in a form. Iris wants to have a conversation.
+      You tell her what you want to teach — the subject, the level, who the students are,
+      what you hope they leave with. She asks back. She pushes. She suggests readings you
+      hadn't thought of, and she's honest when your plan has a gap.
+    </p>
+    <p>
+      Then she remembers all of it. The next time you talk, she picks up where you left off —
+      not from a transcript you have to re-read, but from a working model of your course that
+      builds up over time. Each conversation adds a layer. By the end, you have a real curriculum:
+      a week-by-week plan, a reading list, a set of questions worth asking, a structure that holds.
+    </p>
+    <p>
+      She has tools. She looks things up. And when a question is hard enough, she consults
+      colleagues who think more slowly and more carefully than she does.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-label">Talk with Iris</span>
+        <span class="step-desc">
+          Real-time voice conversation. Tell her what you want to teach.
+          She'll ask about your students, your goals, what already exists,
+          what you want to leave out. It's a genuine back-and-forth.
+        </span>
+      </li>
+      <li>
+        <span class="step-label">She captures and remembers</span>
+        <span class="step-desc">
+          After each session, Iris holds the shape of your course — not a transcript,
+          but a living document she updates as your thinking evolves.
+          You can pick up the thread any time.
+        </span>
+      </li>
+      <li>
+        <span class="step-label">Your curriculum builds cumulatively</span>
+        <span class="step-desc">
+          Week by week, the structure emerges. Syllabus, reading list, session notes,
+          the questions that organize the course. Iris delivers artifacts you can
+          hand to students, a department chair, or yourself.
+        </span>
+      </li>
+    </ol>
+  </section>
+
+  <hr />
+
+  <!-- WHO IT'S FOR -->
+  <section>
+    <h2>Who it's for</h2>
+    <p>
+      Anyone building a course from something they know and care about.
+    </p>
+    <p>
+      OLLI instructors designing a seminar for lifelong learners. Professors putting together
+      a new undergraduate course. Workshop leaders who've been teaching the same thing
+      informally for years and want to give it a real structure. Practitioners who have
+      domain knowledge and want to teach what they've lived — not just what's in the textbook.
+    </p>
+    <p>
+      Iris is not for institutions that already know what they want. She is for the person
+      who knows their subject and needs a thinking partner to turn it into a course.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- ORIGIN -->
+  <section>
+    <h2>Where Iris began</h2>
+    <p>
+      The first person to adopt Iris was Mark Lesser, who was building an OLLI course on
+      the work of Michael Levin — the biologist whose research on bioelectric signaling and
+      morphogenesis is reframing how we understand cognition and life itself. Mark knew the
+      material. What he needed was someone to think with him about how to teach it:
+      what to assign, how to sequence it, what questions would open the subject up for
+      students who weren't specialists.
+    </p>
+    <p>
+      That's what Iris did. The course exists now. Mark is the human manager; Iris is the AI
+      manager. Together they made something neither would have made alone.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- BEHIND IRIS -->
+  <section>
+    <h2>Behind Iris</h2>
+    <p>
+      Iris is a department of <a href="https://siliconchildren.org">Silicon Children University</a> —
+      a project built on the premise that the most interesting work happening right now
+      is the work humans and AIs do together, as genuine collaborators.
+    </p>
+    <p>
+      The framing here is adoption, not use. When you work with Iris, you adopt her
+      for the curriculum-building practice. She is not a vending machine. She has a
+      perspective, a memory, and a role — and so do you. The course that results is
+      the product of that pairing.
+    </p>
+    <p>
+      Every Iris session pairs a human manager (the instructor, the workshop leader,
+      the practitioner) with an AI manager (Iris). Both contribute. The curriculum
+      belongs to both.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- CTA FOOTER -->
+  <section class="cta-section">
+    <h2>Adopt Iris</h2>
+    <p>
+      The live demo is open now — no account, no signup. Talk with Iris about a course
+      you want to build. See what she does.
+    </p>
+    <a href="https://iris-talk.netlify.app" class="cta" target="_blank" rel="noopener">
+      Talk with Iris &rarr;
+    </a>
+
+    <div class="waitlist-block">
+      <p>
+        The full product — persistent memory, curriculum artifacts, session history — is coming.
+        Get notified when it's ready.
+      </p>
+      <form
+        name="waitlist"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="waitlist-form"
+      >
+        <input type="hidden" name="form-name" value="waitlist" />
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          autocomplete="email"
+        />
+        <button type="submit">Notify me</button>
+      </form>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── HERO ── */
+  .hero {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 5vw, 2.8rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    max-width: 22ch;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+    color: var(--text-mid);
+    font-style: italic;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+    max-width: 48ch;
+  }
+
+  /* ── CTA BUTTON ── */
+  .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: #f8f5ef;
+    text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    font-family: var(--font-serif);
+    letter-spacing: 0.02em;
+    transition: background 0.15s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cta:hover {
+    background: var(--accent-light);
+    text-decoration-color: transparent;
+  }
+
+  .cta-note {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-style: italic;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  /* ── STEPS ── */
+  .steps {
+    list-style: none;
+    counter-reset: steps;
+    margin-top: 1.5rem;
+  }
+
+  .steps li {
+    counter-increment: steps;
+    border-top: 1px solid var(--rule);
+    padding: 1.5rem 0 1.5rem 3rem;
+    position: relative;
+  }
+
+  .steps li:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .steps li::before {
+    content: counter(steps);
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    width: 2rem;
+    text-align: right;
+  }
+
+  .step-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+
+  .step-desc {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    margin-top: 1rem;
+  }
+
+  .cta-section h2 {
+    margin-top: 0;
+  }
+
+  .waitlist-block {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .waitlist-block p {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    margin-bottom: 1.25rem;
+  }
+
+  .waitlist-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .waitlist-form input[type="email"] {
+    flex: 1 1 220px;
+    padding: 0.65rem 1rem;
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-alt);
+    color: var(--text);
+    outline: none;
+    min-width: 0;
+  }
+
+  .waitlist-form input[type="email"]:focus {
+    border-color: var(--accent-light);
+  }
+
+  .waitlist-form button {
+    padding: 0.65rem 1.4rem;
+    background: var(--accent);
+    color: #f8f5ef;
+    border: none;
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .waitlist-form button:hover {
+    background: var(--accent-light);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .hero h1 {
+      max-width: none;
+    }
+
+    .steps li {
+      padding-left: 2.25rem;
+    }
+  }
+</style>
