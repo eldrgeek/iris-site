@@ -223,6 +223,13 @@ const ogImage = 'https://adopt-iris.netlify.app/og-image.png';
       }
     }
   </style>
+  <!-- SOMA feedback chip, same-origin (SOMA/standards/soma-feedback-proxy).
+       Assets are served from this site; submissions go through
+       netlify/functions/soma-feedback.cjs (.cjs because package.json is ESM). -->
+  <link rel="stylesheet" href="/vendor/soma-feedback/soma-feedback.css">
+  <script is:inline src="/vendor/soma-feedback/soma-feedback.js"
+          data-endpoint="/.netlify/functions/soma-feedback"
+          data-site="iris-site" defer></script>
 </head>
 <body>
   <nav>
